@@ -111,26 +111,35 @@ export default {
 
 <style scoped>
 .question-box {
-  background-color: rgba(138, 135, 135, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background-color: rgba(127, 243, 18, 0.8);
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  border-radius: 15px;
 }
 .submit {
-  background-color: rgba(167, 156, 209, 0.842);
+  background-color: rgb(19, 236, 37);
   margin: 10px;
 }
 .next {
-  background-color: rgb(40, 180, 115, 0.6);
+  background-color: rgb(16, 146, 233);
 }
 .selection {
   background-color: rgba(167, 236, 236, 0.8);
   border: 2px solid black;
+  width: 60%;
+  border-radius: 15px;
 }
 .selection:hover {
-  background-color: rgba(86, 233, 233, 0.5);
+  background-color: rgb(21, 235, 235);
   cursor: pointer;
 }
 .selected {
-  background-color: rgba(199, 207, 207, 0.9);
+  background-color: rgba(23, 223, 223, 0.9);
 }
 .correct {
   background-color: springgreen;

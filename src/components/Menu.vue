@@ -96,6 +96,10 @@ export default {
 </script>
 <style scoped>
 .menus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
   text-align: right;
   max-width: 95vw;
 }

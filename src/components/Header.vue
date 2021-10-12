@@ -15,11 +15,18 @@ export default {
 
 <style scoped>
 .container {
-  max-width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   align-content: center;
+  background-color: rgb(233, 243, 174);
 }
 .header {
+  align-self: center;
+  background-color: rgb(32, 235, 14);
   text-align: center;
-  background-color: rgba(167, 236, 236, 0.8);
+  border-radius: 20px;
+  width: 60%;
 }
 </style>

@@ -69,7 +69,14 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #288ef5;
   margin-top: 60px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(233, 243, 174);
+  height: 100vh;
 }
 </style>
