@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <h1>Vue trivia app</h1>
+    <h1>Lets do some trivia!</h1>
     <h3>{{ this.totalCorrect }}/{{ this.totalQuestions }}</h3>
   </div>
 </template>
