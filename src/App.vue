@@ -44,13 +44,15 @@ export default {
       }
     },
     async updateEndpoint(newEndpoint) {
-      await fetch(newEndpoint, {
+      const response = await fetch(newEndpoint, {
         method: 'get',
-      })
-        .then((res) => res.json())
-        .then((jsonData) => {
-          this.questions = jsonData.results;
-        });
+      });
+      try {
+        const jsonData = await response.json();
+        this.questions = jsonData.results;
+      } catch (err) {
+        if (err) this.questions = new Error('Something went wrong');
+      }
     },
     hasBeenSubmitted() {},
   },
